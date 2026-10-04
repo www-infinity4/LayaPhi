@@ -13,10 +13,15 @@ function assertObject(value,label){
 export function candidatesFromApiPhi(catalog,{lastPushed='1970-01-01T00:00:00Z'}={}){
  assertObject(catalog,'APIPhi catalog');
  if(catalog.schema!=='phi.capability-catalog')throw new TypeError('unsupported APIPhi catalog schema');
- return (catalog.candidates||[]).map(item=>({
+ const items=catalog.candidates||[];
+ const capabilities=[...new Set(items.flatMap(item=>(item.capabilities||[]).map(String)))];
+ if(!capabilities.length)return [];
+ // ToolScanner intentionally de-duplicates repositories. APIPhi is therefore
+ // one provider candidate whose capability tags represent its whole catalog.
+ return [{
   repository:'www-infinity4/APIPhi',
-  purpose:`${item.category||'external'} capability candidate: ${item.id}`,
-  category:item.category||'external-api',
+  purpose:'Discovery catalog for external Phi API capabilities',
+  category:'external-api',
   license:INTERNAL_LICENSE,
   lastPushed,
   archived:false,
@@ -27,8 +32,8 @@ export function candidatesFromApiPhi(catalog,{lastPushed='1970-01-01T00:00:00Z'}
   nativeBinaries:false,
   networkAtRuntime:true,
   knownAdvisories:0,
-  capabilities:(item.capabilities||[]).map(String)
- }));
+  capabilities
+ }];
 }
 
 export function candidateFromQuantAI(contract,{lastPushed='1970-01-01T00:00:00Z'}={}){
