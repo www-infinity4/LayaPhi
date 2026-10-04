@@ -1,0 +1,157 @@
+{
+  "id": "blueprint",
+  "name": "Blueprint",
+  "description": "Dark engineering-drawing aesthetic: monospaced headings, thin outlined mode boxes.",
+  "typography": {
+    "baseSize": 1.0625,
+    "scaleRatio": 1.2,
+    "lineHeight": 1.6,
+    "fontRoles": {
+      "heading": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "body": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    },
+    "weights": {
+      "body": 400,
+      "heading": 600,
+      "strong": 700
+    }
+  },
+  "spacing": {
+    "unit": 0.5,
+    "scale": [
+      0.25,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4.5,
+      6
+    ]
+  },
+  "contentWidth": {
+    "text": 66,
+    "page": 1120
+  },
+  "colors": {
+    "scheme": "dark",
+    "bg": "#0b1b33",
+    "surface": "#102847",
+    "text": "#e8f0ff",
+    "muted": "#a9bddc",
+    "link": "#8cc2ff",
+    "accent": "#5aa9ff",
+    "focus": "#ffd23f",
+    "border": "#4b6a99",
+    "modes": {
+      "yellow": {
+        "bg": "#3a3000",
+        "fg": "#ffe680",
+        "accent": "#ffd23f"
+      },
+      "green": {
+        "bg": "#0f2e1a",
+        "fg": "#b9f0c9",
+        "accent": "#4cd07d"
+      },
+      "blue": {
+        "bg": "#10243f",
+        "fg": "#bcd7ff",
+        "accent": "#6aa5ff"
+      },
+      "red": {
+        "bg": "#3b1210",
+        "fg": "#ffc9c3",
+        "accent": "#ff7a6b"
+      },
+      "orange": {
+        "bg": "#3d2000",
+        "fg": "#ffd3a8",
+        "accent": "#ff9a3c"
+      }
+    }
+  },
+  "contrast": {
+    "text": 4.5,
+    "nonText": 3
+  },
+  "borders": {
+    "width": 1,
+    "style": "dashed"
+  },
+  "corners": {
+    "radius": 0,
+    "geometry": "square"
+  },
+  "shadows": {
+    "card": "none"
+  },
+  "rhythm": {
+    "section": 5,
+    "pattern": "uniform"
+  },
+  "hero": {
+    "behavior": "split",
+    "minHeight": 0
+  },
+  "imageTreatment": {
+    "aspect": "16 / 9",
+    "fit": "cover",
+    "frame": "none"
+  },
+  "videoTreatment": {
+    "aspect": "16 / 9",
+    "frame": "none",
+    "chapterStyle": "list"
+  },
+  "navigation": {
+    "default": "sticky-toc",
+    "allowed": [
+      "sticky-toc",
+      "top-bar"
+    ],
+    "stickyHeader": true
+  },
+  "cards": {
+    "style": "outlined",
+    "padding": 1.25
+  },
+  "modeTreatment": "outline",
+  "animation": {
+    "maxDurationMs": 200,
+    "transitions": true
+  },
+  "breakpoints": {
+    "md": 640,
+    "lg": 1024
+  },
+  "suits": {
+    "profiles": [
+      "reader",
+      "mixed",
+      "visual"
+    ],
+    "archetypes": [
+      "explainer",
+      "project-guide",
+      "research",
+      "course"
+    ]
+  },
+  "mutation": {
+    "allowed": [
+      "hero.orientation",
+      "section.order",
+      "column.ratio",
+      "media.placement",
+      "density",
+      "navigation.style",
+      "section.rhythm",
+      "type.scale",
+      "card.geometry",
+      "whitespace",
+      "source.presentation"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "sunrise-classroom",
+  "name": "Sunrise Classroom",
+  "description": "Friendly large rounded type, bright pill badges and generous tap targets; approachable learning.",
+  "typography": {
+    "baseSize": 1.1875,
+    "scaleRatio": 1.25,
+    "lineHeight": 1.65,
+    "fontRoles": {
+      "heading": "'Trebuchet MS', 'Segoe UI', sans-serif",
+      "body": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    },
+    "weights": {
+      "body": 400,
+      "heading": 700,
+      "strong": 700
+    }
+  },
+  "spacing": {
+    "unit": 0.5,
+    "scale": [
+      0.25,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4.5,
+      6
+    ]
+  },
+  "contentWidth": {
+    "text": 66,
+    "page": 1120
+  },
+  "colors": {
+    "scheme": "light",
+    "bg": "#fffaf0",
+    "surface": "#fff0d6",
+    "text": "#2a2118",
+    "muted": "#5b4d3c",
+    "link": "#0b5cad",
+    "accent": "#b45309",
+    "focus": "#0b5cad",
+    "border": "#bfa77f",
+    "modes": {
+      "yellow": {
+        "bg": "#fff6cc",
+        "fg": "#4a3b00",
+        "accent": "#8a6a00"
+      },
+      "green": {
+        "bg": "#e3f5e8",
+        "fg": "#0b3d1c",
+        "accent": "#1b7f3b"
+      },
+      "blue": {
+        "bg": "#e1edfb",
+        "fg": "#0d2c54",
+        "accent": "#1f5fbf"
+      },
+      "red": {
+        "bg": "#fde4e1",
+        "fg": "#5a0f0a",
+        "accent": "#c0392b"
+      },
+      "orange": {
+        "bg": "#ffe9d6",
+        "fg": "#5a2a00",
+        "accent": "#b45309"
+      }
+    }
+  },
+  "contrast": {
+    "text": 4.5,
+    "nonText": 3
+  },
+  "borders": {
+    "width": 2,
+    "style": "solid"
+  },
+  "corners": {
+    "radius": 24,
+    "geometry": "pill"
+  },
+  "shadows": {
+    "card": "0 4px 0 rgba(42,33,24,.18)"
+  },
+  "rhythm": {
+    "section": 5,
+    "pattern": "uniform"
+  },
+  "hero": {
+    "behavior": "split",
+    "minHeight": 0
+  },
+  "imageTreatment": {
+    "aspect": "16 / 9",
+    "fit": "cover",
+    "frame": "none"
+  },
+  "videoTreatment": {
+    "aspect": "16 / 9",
+    "frame": "none",
+    "chapterStyle": "list"
+  },
+  "navigation": {
+    "default": "bottom-bar",
+    "allowed": [
+      "bottom-bar",
+      "top-bar",
+      "minimal"
+    ],
+    "stickyHeader": false
+  },
+  "cards": {
+    "style": "raised",
+    "padding": 1.5
+  },
+  "modeTreatment": "badge",
+  "animation": {
+    "maxDurationMs": 200,
+    "transitions": true
+  },
+  "breakpoints": {
+    "md": 640,
+    "lg": 1024
+  },
+  "suits": {
+    "profiles": [
+      "mixed",
+      "visual",
+      "video",
+      "reader"
+    ],
+    "archetypes": [
+      "course",
+      "explainer",
+      "project-guide",
+      "landing"
+    ]
+  },
+  "mutation": {
+    "allowed": [
+      "hero.orientation",
+      "section.order",
+      "column.ratio",
+      "media.placement",
+      "density",
+      "navigation.style",
+      "section.rhythm",
+      "type.scale",
+      "card.geometry",
+      "whitespace",
+      "source.presentation"
+    ]
+  }
+}

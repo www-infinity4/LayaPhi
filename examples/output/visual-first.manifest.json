@@ -1,0 +1,788 @@
+{
+  "generator": {
+    "name": "LayaPhi",
+    "version": "0.1.0"
+  },
+  "seed": "phi-visual",
+  "inputHash": "31567f07a9b4953b",
+  "archetype": "explainer",
+  "signature": {
+    "id": "gallery-white",
+    "name": "Gallery White",
+    "modeTreatment": "badge",
+    "rejected": []
+  },
+  "navigation": "bottom-bar",
+  "sourcePresentation": "footnotes",
+  "leadOrientation": "split",
+  "tokenOverrides": {
+    "columnRatio": "3:2",
+    "rhythm": "alternating",
+    "typeScale": 1.2
+  },
+  "components": [
+    {
+      "id": "lead",
+      "component": "split-hero",
+      "props": {
+        "density": "comfortable",
+        "alignment": "center",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "after-first"
+      }
+    },
+    {
+      "id": "toc",
+      "component": "toc",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "none",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "after-first"
+      }
+    },
+    {
+      "id": "s-forces",
+      "component": "lesson",
+      "section": "forces",
+      "mode": "blue",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "start",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "after-first"
+      }
+    },
+    {
+      "id": "s-numbers",
+      "component": "statistics",
+      "section": "numbers",
+      "mode": "blue",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-designs",
+      "component": "feature-grid",
+      "section": "designs",
+      "mode": "green",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 3,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-gallery",
+      "component": "media-rail",
+      "section": "gallery",
+      "mode": "yellow",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 3,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-timeline",
+      "component": "timeline",
+      "section": "timeline",
+      "mode": "blue",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-myths",
+      "component": "comparison",
+      "section": "myths",
+      "mode": "red",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 2,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-faq",
+      "component": "faq",
+      "section": "faq",
+      "mode": "red",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-build-a-truss",
+      "component": "project",
+      "section": "build-a-truss",
+      "mode": "orange",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "start",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-quote",
+      "component": "quote",
+      "section": "quote",
+      "mode": "yellow",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "s-related",
+      "component": "related",
+      "section": "related",
+      "mode": "yellow",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 3,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "plain",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "none"
+      }
+    },
+    {
+      "id": "sources",
+      "component": "sources",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "none",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "after-first"
+      }
+    },
+    {
+      "id": "footer",
+      "component": "footer",
+      "props": {
+        "density": "comfortable",
+        "alignment": "start",
+        "columns": 1,
+        "mediaPosition": "top",
+        "textWidth": "narrow",
+        "sectionSpacing": "normal",
+        "emphasis": "high",
+        "cardTreatment": "none",
+        "borderTreatment": "none",
+        "backgroundTreatment": "none",
+        "collapse": "after-first"
+      }
+    }
+  ],
+  "mutations": {
+    "applied": [
+      {
+        "id": "hero.orientation",
+        "target": "lead",
+        "from": "full",
+        "to": "split",
+        "reason": "chosen from 3 compatible options"
+      },
+      {
+        "id": "column.ratio",
+        "target": "split layouts",
+        "from": "1:1",
+        "to": "3:2",
+        "reason": "chosen from 4 compatible options"
+      },
+      {
+        "id": "media.placement",
+        "target": "sections with media",
+        "from": "top",
+        "to": "start",
+        "reason": "chosen from 2 compatible options"
+      },
+      {
+        "id": "density",
+        "target": "all components",
+        "from": "spacious",
+        "to": "comfortable",
+        "reason": "chosen from 2 compatible options"
+      },
+      {
+        "id": "navigation.style",
+        "target": "page",
+        "from": "minimal",
+        "to": "bottom-bar",
+        "reason": "chosen from 3 compatible options"
+      },
+      {
+        "id": "section.rhythm",
+        "target": "page",
+        "from": "accelerating",
+        "to": "alternating",
+        "reason": "chosen from 3 compatible options"
+      },
+      {
+        "id": "type.scale",
+        "target": "typography",
+        "from": 1.25,
+        "to": 1.2,
+        "reason": "chosen from 3 compatible options"
+      },
+      {
+        "id": "source.presentation",
+        "target": "sources",
+        "from": "list",
+        "to": "footnotes",
+        "reason": "chosen from 4 compatible options"
+      }
+    ],
+    "rejected": [
+      {
+        "id": "hero.orientation",
+        "value": "typographic",
+        "reason": "visual profile requires a media lead"
+      },
+      {
+        "id": "section.order",
+        "value": "stats-early",
+        "reason": "no eligible section to move"
+      },
+      {
+        "id": "media.placement",
+        "value": "end",
+        "reason": "visual profile leads with media"
+      },
+      {
+        "id": "media.placement",
+        "value": "bottom",
+        "reason": "visual profile leads with media"
+      },
+      {
+        "id": "media.placement",
+        "value": "alternate",
+        "reason": "alternating placement reserved for balanced layouts"
+      },
+      {
+        "id": "density",
+        "value": "compact",
+        "reason": "compact density harms readability/tap spacing for this profile"
+      },
+      {
+        "id": "navigation.style",
+        "value": "sticky-toc",
+        "reason": "not allowed by gallery-white / visual profile"
+      },
+      {
+        "id": "type.scale",
+        "value": 1.125,
+        "reason": "differs too far from the signature type scale"
+      },
+      {
+        "id": "card.geometry",
+        "value": 0,
+        "reason": "square signatures stay square"
+      },
+      {
+        "id": "card.geometry",
+        "value": 0.5,
+        "reason": "square signatures stay square"
+      },
+      {
+        "id": "card.geometry",
+        "value": 2,
+        "reason": "square signatures stay square"
+      },
+      {
+        "id": "whitespace",
+        "value": 0.85,
+        "reason": "only dense reading layouts tighten whitespace"
+      }
+    ],
+    "unchanged": [
+      "section.order",
+      "card.geometry",
+      "whitespace"
+    ]
+  },
+  "userPresentation": {
+    "profile": "visual",
+    "weights": {
+      "text": 0.3,
+      "media": 0.7
+    },
+    "basis": "explicit-style",
+    "confidence": 0.9,
+    "signalsUsed": [
+      "style"
+    ],
+    "ignoredSignals": [],
+    "overrides": [],
+    "note": "Preference is a design signal, not a restriction; sensitive attributes are never used."
+  },
+  "accessibility": {
+    "passed": true,
+    "checks": [
+      {
+        "id": "contrast-text",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "text on page/surface 16.74:1 ≥ 4.5"
+      },
+      {
+        "id": "contrast-muted",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "muted text on page/surface 8.20:1 ≥ 4.5"
+      },
+      {
+        "id": "contrast-link",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "links on page/surface 16.10:1 ≥ 4.5"
+      },
+      {
+        "id": "contrast-mode-yellow",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "yellow mode text 10.07:1"
+      },
+      {
+        "id": "contrast-mode-yellow-accent",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "yellow accent 4.66:1"
+      },
+      {
+        "id": "contrast-mode-green",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "green mode text 10.89:1"
+      },
+      {
+        "id": "contrast-mode-green-accent",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "green accent 4.46:1"
+      },
+      {
+        "id": "contrast-mode-blue",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "blue mode text 11.76:1"
+      },
+      {
+        "id": "contrast-mode-blue-accent",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "blue accent 5.14:1"
+      },
+      {
+        "id": "contrast-mode-red",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "red mode text 11.52:1"
+      },
+      {
+        "id": "contrast-mode-red-accent",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "red accent 4.50:1"
+      },
+      {
+        "id": "contrast-mode-orange",
+        "criterion": "WCAG 1.4.3",
+        "status": "pass",
+        "detail": "orange mode text 10.12:1"
+      },
+      {
+        "id": "contrast-mode-orange-accent",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "orange accent 4.28:1"
+      },
+      {
+        "id": "contrast-accent",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "accent 17.40:1"
+      },
+      {
+        "id": "contrast-focus",
+        "criterion": "WCAG 1.4.11",
+        "status": "pass",
+        "detail": "focus 6.39:1"
+      },
+      {
+        "id": "line-length",
+        "criterion": "WCAG 1.4.8 (advisory)",
+        "status": "pass",
+        "detail": "text measure 66ch within 45–80 characters for variants narrow"
+      },
+      {
+        "id": "lang",
+        "criterion": "WCAG 3.1.1",
+        "status": "pass",
+        "detail": "document language declared"
+      },
+      {
+        "id": "title",
+        "criterion": "WCAG 2.4.2",
+        "status": "pass",
+        "detail": "page title present"
+      },
+      {
+        "id": "viewport",
+        "criterion": "WCAG 1.4.4",
+        "status": "pass",
+        "detail": "responsive viewport, zoom not disabled"
+      },
+      {
+        "id": "single-h1",
+        "criterion": "WCAG 1.3.1",
+        "status": "pass",
+        "detail": "exactly one h1"
+      },
+      {
+        "id": "heading-hierarchy",
+        "criterion": "WCAG 1.3.1",
+        "status": "pass",
+        "detail": "heading levels never skip (27 headings)"
+      },
+      {
+        "id": "landmarks",
+        "criterion": "WCAG 1.3.1 / 2.4.1",
+        "status": "pass",
+        "detail": "banner, main and contentinfo present"
+      },
+      {
+        "id": "nav-labels",
+        "criterion": "WCAG 2.4.1",
+        "status": "pass",
+        "detail": "navigation landmarks are uniquely labelled"
+      },
+      {
+        "id": "skip-link",
+        "criterion": "WCAG 2.4.1",
+        "status": "pass",
+        "detail": "skip link is first focusable element and targets main"
+      },
+      {
+        "id": "keyboard",
+        "criterion": "WCAG 2.1.1 / 2.4.3",
+        "status": "pass",
+        "detail": "native interactive elements only; no positive tabindex; scrollers focusable and labelled"
+      },
+      {
+        "id": "anchors",
+        "criterion": "WCAG 4.1.1",
+        "status": "pass",
+        "detail": "ids unique and in-page anchors resolve"
+      },
+      {
+        "id": "alt-text",
+        "criterion": "WCAG 1.1.1",
+        "status": "pass",
+        "detail": "10 images all have alt text or are explicitly decorative"
+      },
+      {
+        "id": "video-controls",
+        "criterion": "WCAG 1.2 / 2.1.1",
+        "status": "pass",
+        "detail": "0 videos with native controls and labels"
+      },
+      {
+        "id": "focus-visible",
+        "criterion": "WCAG 2.4.7",
+        "status": "pass",
+        "detail": "visible focus ring on every focusable element"
+      },
+      {
+        "id": "tap-targets",
+        "criterion": "WCAG 2.5.5 / 2.5.8",
+        "status": "pass",
+        "detail": "interactive controls ≥ 44px"
+      },
+      {
+        "id": "reduced-motion",
+        "criterion": "WCAG 2.3.3",
+        "status": "pass",
+        "detail": "prefers-reduced-motion disables transitions/animations; no infinite animation"
+      },
+      {
+        "id": "no-hover-only",
+        "criterion": "WCAG 1.4.13 / mobile",
+        "status": "pass",
+        "detail": "hover styles are enhancement-only"
+      },
+      {
+        "id": "responsive-overflow",
+        "criterion": "WCAG 1.4.10",
+        "status": "pass",
+        "detail": "fluid media, wrapping text, contained scrollers, no fixed widths > 320px"
+      },
+      {
+        "id": "no-overlap",
+        "criterion": "mobile",
+        "status": "pass",
+        "detail": "fixed navigation reserves body padding"
+      }
+    ],
+    "repairs": []
+  },
+  "tools": [
+    {
+      "id": "css-custom-properties-compiler",
+      "category": "layout",
+      "adapter": "src/compiler/tokens.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "fluid-typography",
+      "category": "typography",
+      "adapter": "src/compiler/tokens.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "contrast-validator",
+      "category": "accessibility",
+      "adapter": "src/accessibility/contrast.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "a11y-static-validator",
+      "category": "accessibility",
+      "adapter": "src/accessibility/validator.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "responsive-breakpoints",
+      "category": "responsive design",
+      "adapter": "src/compiler/css.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "reduced-motion-guard",
+      "category": "animation",
+      "adapter": "src/compiler/css.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "phi-educational-modes",
+      "category": "educational components",
+      "adapter": "src/components/modes.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "semantic-html",
+      "category": "layout",
+      "adapter": "src/compiler/html.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "css-grid-layout",
+      "category": "layout",
+      "adapter": "src/compiler/html.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "details-disclosure",
+      "category": "educational components",
+      "adapter": "src/components/library.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "scroll-snap-rail",
+      "category": "galleries",
+      "adapter": "src/compiler/css.js",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "toc-navigation",
+      "category": "navigation",
+      "adapter": "src/components/library.js",
+      "bytes": 350,
+      "runtimeJs": true
+    }
+  ],
+  "rejectedCombinations": [],
+  "decisions": [
+    {
+      "decision": "archetype: explainer",
+      "reason": "educational content with mixed Phi modes"
+    },
+    {
+      "decision": "content hierarchy",
+      "reason": "2 core, 5 supporting, 3 auxiliary sections; 165 words; 7 images; video: false"
+    },
+    {
+      "decision": "presentation profile: visual",
+      "reason": "basis=explicit-style, confidence=0.9"
+    },
+    {
+      "decision": "design signature: gallery-white",
+      "reason": "suits profile \"visual\" / archetype \"explainer\""
+    },
+    {
+      "decision": "lead orientation: full",
+      "reason": "visual profile; signature hero behaviour is stacked"
+    },
+    {
+      "decision": "table of contents included",
+      "reason": "10 navigable sections; rendered as visual navigation chips with thumbnails"
+    },
+    {
+      "decision": "gallery: gallery → media-rail",
+      "reason": "visual profile favours a scrolling visual rail for 4 images"
+    },
+    {
+      "decision": "modes present: blue=Understand, green=Engineer, yellow=Explore, red=Challenge, orange=Build",
+      "reason": "rendered with \"badge\" treatment by gallery-white"
+    },
+    {
+      "decision": "mutation hero.orientation: full → split",
+      "reason": "chosen from 3 compatible options"
+    },
+    {
+      "decision": "mutation column.ratio: 1:1 → 3:2",
+      "reason": "chosen from 4 compatible options"
+    },
+    {
+      "decision": "mutation media.placement: top → start",
+      "reason": "chosen from 2 compatible options"
+    },
+    {
+      "decision": "mutation density: spacious → comfortable",
+      "reason": "chosen from 2 compatible options"
+    },
+    {
+      "decision": "mutation navigation.style: minimal → bottom-bar",
+      "reason": "chosen from 3 compatible options"
+    },
+    {
+      "decision": "mutation section.rhythm: accelerating → alternating",
+      "reason": "chosen from 3 compatible options"
+    },
+    {
+      "decision": "mutation type.scale: 1.25 → 1.2",
+      "reason": "chosen from 3 compatible options"
+    },
+    {
+      "decision": "mutation source.presentation: list → footnotes",
+      "reason": "chosen from 4 compatible options"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "midnight-lab",
+  "name": "Midnight Lab",
+  "description": "Dark laboratory interface with luminous accents and rounded tinted panels; video friendly.",
+  "typography": {
+    "baseSize": 1.0625,
+    "scaleRatio": 1.25,
+    "lineHeight": 1.6,
+    "fontRoles": {
+      "heading": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "body": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    },
+    "weights": {
+      "body": 400,
+      "heading": 600,
+      "strong": 700
+    }
+  },
+  "spacing": {
+    "unit": 0.5,
+    "scale": [
+      0.25,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4.5,
+      6
+    ]
+  },
+  "contentWidth": {
+    "text": 66,
+    "page": 1120
+  },
+  "colors": {
+    "scheme": "dark",
+    "bg": "#0d1117",
+    "surface": "#161b22",
+    "text": "#e6edf3",
+    "muted": "#a6b0bc",
+    "link": "#79b8ff",
+    "accent": "#58a6ff",
+    "focus": "#f2cc60",
+    "border": "#4a5563",
+    "modes": {
+      "yellow": {
+        "bg": "#3a3000",
+        "fg": "#ffe680",
+        "accent": "#ffd23f"
+      },
+      "green": {
+        "bg": "#0f2e1a",
+        "fg": "#b9f0c9",
+        "accent": "#4cd07d"
+      },
+      "blue": {
+        "bg": "#10243f",
+        "fg": "#bcd7ff",
+        "accent": "#6aa5ff"
+      },
+      "red": {
+        "bg": "#3b1210",
+        "fg": "#ffc9c3",
+        "accent": "#ff7a6b"
+      },
+      "orange": {
+        "bg": "#3d2000",
+        "fg": "#ffd3a8",
+        "accent": "#ff9a3c"
+      }
+    }
+  },
+  "contrast": {
+    "text": 4.5,
+    "nonText": 3
+  },
+  "borders": {
+    "width": 1,
+    "style": "solid"
+  },
+  "corners": {
+    "radius": 16,
+    "geometry": "round"
+  },
+  "shadows": {
+    "card": "0 0 0 1px rgba(88,166,255,.25)"
+  },
+  "rhythm": {
+    "section": 5,
+    "pattern": "uniform"
+  },
+  "hero": {
+    "behavior": "full",
+    "minHeight": 50
+  },
+  "imageTreatment": {
+    "aspect": "16 / 9",
+    "fit": "cover",
+    "frame": "none"
+  },
+  "videoTreatment": {
+    "aspect": "16 / 9",
+    "frame": "border",
+    "chapterStyle": "chips"
+  },
+  "navigation": {
+    "default": "top-bar",
+    "allowed": [
+      "top-bar",
+      "bottom-bar",
+      "minimal"
+    ],
+    "stickyHeader": true
+  },
+  "cards": {
+    "style": "filled",
+    "padding": 1.25
+  },
+  "modeTreatment": "tint",
+  "animation": {
+    "maxDurationMs": 200,
+    "transitions": true
+  },
+  "breakpoints": {
+    "md": 640,
+    "lg": 1024
+  },
+  "suits": {
+    "profiles": [
+      "video",
+      "visual",
+      "mixed"
+    ],
+    "archetypes": [
+      "course",
+      "explainer",
+      "project-guide",
+      "visual-story"
+    ]
+  },
+  "mutation": {
+    "allowed": [
+      "hero.orientation",
+      "section.order",
+      "column.ratio",
+      "media.placement",
+      "density",
+      "navigation.style",
+      "section.rhythm",
+      "type.scale",
+      "card.geometry",
+      "whitespace",
+      "source.presentation"
+    ]
+  }
+}

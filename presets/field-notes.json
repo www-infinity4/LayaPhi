@@ -1,0 +1,158 @@
+{
+  "id": "field-notes",
+  "name": "Field Notes",
+  "description": "Naturalist notebook: warm tinted mode panels, rounded cards, readable humanist type.",
+  "typography": {
+    "baseSize": 1.0625,
+    "scaleRatio": 1.2,
+    "lineHeight": 1.65,
+    "fontRoles": {
+      "heading": "'Trebuchet MS', Verdana, sans-serif",
+      "body": "Georgia, 'Iowan Old Style', 'Times New Roman', serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    },
+    "weights": {
+      "body": 400,
+      "heading": 700,
+      "strong": 700
+    }
+  },
+  "spacing": {
+    "unit": 0.5,
+    "scale": [
+      0.25,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4.5,
+      6
+    ]
+  },
+  "contentWidth": {
+    "text": 66,
+    "page": 1120
+  },
+  "colors": {
+    "scheme": "light",
+    "bg": "#f7f3e8",
+    "surface": "#ece5d0",
+    "text": "#262218",
+    "muted": "#554e3c",
+    "link": "#17604a",
+    "accent": "#17604a",
+    "focus": "#17604a",
+    "border": "#a99f84",
+    "modes": {
+      "yellow": {
+        "bg": "#fff6cc",
+        "fg": "#4a3b00",
+        "accent": "#8a6a00"
+      },
+      "green": {
+        "bg": "#e3f5e8",
+        "fg": "#0b3d1c",
+        "accent": "#1b7f3b"
+      },
+      "blue": {
+        "bg": "#e1edfb",
+        "fg": "#0d2c54",
+        "accent": "#1f5fbf"
+      },
+      "red": {
+        "bg": "#fde4e1",
+        "fg": "#5a0f0a",
+        "accent": "#c0392b"
+      },
+      "orange": {
+        "bg": "#ffe9d6",
+        "fg": "#5a2a00",
+        "accent": "#b45309"
+      }
+    }
+  },
+  "contrast": {
+    "text": 4.5,
+    "nonText": 3
+  },
+  "borders": {
+    "width": 1,
+    "style": "solid"
+  },
+  "corners": {
+    "radius": 12,
+    "geometry": "soft"
+  },
+  "shadows": {
+    "card": "none"
+  },
+  "rhythm": {
+    "section": 5,
+    "pattern": "alternating"
+  },
+  "hero": {
+    "behavior": "split",
+    "minHeight": 0
+  },
+  "imageTreatment": {
+    "aspect": "16 / 9",
+    "fit": "cover",
+    "frame": "none"
+  },
+  "videoTreatment": {
+    "aspect": "16 / 9",
+    "frame": "none",
+    "chapterStyle": "list"
+  },
+  "navigation": {
+    "default": "top-bar",
+    "allowed": [
+      "top-bar",
+      "sticky-toc",
+      "minimal"
+    ],
+    "stickyHeader": false
+  },
+  "cards": {
+    "style": "filled",
+    "padding": 1.25
+  },
+  "modeTreatment": "tint",
+  "animation": {
+    "maxDurationMs": 200,
+    "transitions": true
+  },
+  "breakpoints": {
+    "md": 640,
+    "lg": 1024
+  },
+  "suits": {
+    "profiles": [
+      "mixed",
+      "reader",
+      "visual"
+    ],
+    "archetypes": [
+      "explainer",
+      "article",
+      "course",
+      "project-guide"
+    ]
+  },
+  "mutation": {
+    "allowed": [
+      "hero.orientation",
+      "section.order",
+      "column.ratio",
+      "media.placement",
+      "density",
+      "navigation.style",
+      "section.rhythm",
+      "type.scale",
+      "card.geometry",
+      "whitespace",
+      "source.presentation"
+    ]
+  }
+}
