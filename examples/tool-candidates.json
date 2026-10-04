@@ -1,0 +1,11 @@
+{
+  "_note": "Illustrative sample metadata for demonstrating the ToolScanner. These are NOT real projects and nothing here is ever fetched, installed or executed.",
+  "candidates": [
+    { "repository": "example-org/tiny-diagrams", "purpose": "Declarative diagrams rendered to inline SVG", "category": "diagrams", "license": "MIT", "lastPushed": "2026-08-20T00:00:00Z", "stars": 1200, "framework": "vanilla", "dependencies": 0, "bundleKb": 4, "capabilities": ["inline-svg-diagrams", "flowchart"] },
+    { "repository": "example-org/giant-ui-kit", "purpose": "Full component framework with a gallery widget", "category": "galleries", "license": "Apache-2.0", "lastPushed": "2026-09-10T00:00:00Z", "stars": 54000, "framework": "react", "dependencies": 40, "bundleKb": 180, "installScripts": true, "capabilities": ["lightbox", "carousel-touch"] },
+    { "repository": "example-org/gpl-charts", "purpose": "Charting library", "category": "data visualization", "license": "GPL-3.0", "lastPushed": "2026-09-01T00:00:00Z", "stars": 900, "framework": "vanilla", "dependencies": 2, "bundleKb": 30, "capabilities": ["bar-chart", "line-chart"] },
+    { "repository": "example-org/old-carousel", "purpose": "Image carousel", "category": "galleries", "license": "MIT", "lastPushed": "2021-01-01T00:00:00Z", "archived": true, "framework": "jquery", "dependencies": 1, "bundleKb": 12, "capabilities": ["carousel-touch"] },
+    { "repository": "example-org/grid-clone", "purpose": "Yet another CSS grid helper", "category": "layout", "license": "MIT", "lastPushed": "2026-09-15T00:00:00Z", "framework": "vanilla", "dependencies": 0, "bundleKb": 2, "capabilities": ["grid-layout", "table-of-contents"] },
+    { "repository": "Example-Org/Tiny-Diagrams", "purpose": "Same repository listed twice", "license": "MIT", "lastPushed": "2026-08-20T00:00:00Z", "framework": "vanilla", "dependencies": 0, "bundleKb": 4, "capabilities": ["inline-svg-diagrams"] }
+  ]
+}

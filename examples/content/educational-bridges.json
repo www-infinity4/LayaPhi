@@ -1,0 +1,107 @@
+{
+  "purpose": "educational",
+  "title": "How Bridges Carry Loads",
+  "topic": "Structural engineering for curious builders",
+  "summary": "Every bridge solves one problem: moving weight sideways to solid ground. Explore the ideas, study the forces, challenge the myths and build a bridge of your own.",
+  "lang": "en",
+  "heroImage": { "src": "assets/bridge-hero.svg", "alt": "Illustration of a suspension bridge crossing a river at midday", "width": 640, "height": 360 },
+  "navigation": [
+    { "label": "Forces", "target": "forces" },
+    { "label": "Designs", "target": "designs" },
+    { "label": "Build", "target": "build-a-truss" },
+    { "label": "Sources", "target": "#sources" }
+  ],
+  "cta": { "label": "Start the bridge project", "href": "#s-build-a-truss", "text": "Ready to test what you learned?" },
+  "sources": [
+    { "title": "Structural Engineering Basics (open course notes)", "url": "https://example.org/structures-101", "publisher": "Example Open University", "note": "Chapters 2–4" },
+    { "title": "A Brief History of Bridge Design", "url": "https://example.org/bridge-history", "publisher": "Example Museum of Engineering" },
+    { "title": "Load Testing Small Structures", "url": "https://example.org/load-testing", "publisher": "Example Maker Guide" }
+  ],
+  "sections": [
+    {
+      "id": "forces", "type": "lesson", "mode": "blue", "title": "Forces every bridge must handle",
+      "summary": "Compression pushes, tension pulls, and every part of a bridge is doing one of the two.",
+      "paragraphs": [
+        "A bridge carries two kinds of load. The dead load is the bridge's own weight, which never goes away. The live load is everything that crosses it: people, vehicles, wind and snow.",
+        "Inside the structure, those loads become internal forces. Compression squeezes material together, like a stack of books being pressed down. Tension stretches material apart, like a rope in a tug of war.",
+        "Different materials are good at different jobs. Stone and concrete are strong in compression but weak in tension. Steel cables are excellent in tension but buckle when pushed. Good designs give each material the force it handles best.",
+        "Engineers also worry about shear, where one part of the structure slides past another, and torsion, a twisting force that wind can introduce on long spans."
+      ],
+      "keyPoints": ["Dead load is constant; live load changes.", "Compression squeezes, tension stretches.", "Match each material to the force it resists best."],
+      "image": { "src": "assets/bridge-beam.svg", "alt": "A flat beam bridge with a red arrow showing a load pushing down at the middle", "caption": "A beam bridge bends: the top squeezes while the bottom stretches.", "width": 640, "height": 360 }
+    },
+    {
+      "id": "numbers", "type": "statistics", "mode": "blue", "title": "Bridges in numbers",
+      "items": [
+        { "value": "~1,000 years", "label": "Oldest stone arch bridges still in use", "note": "Well-built arches improve under load." },
+        { "value": "3", "label": "Classic structural families", "note": "Beam, arch and suspension." },
+        { "value": "2:1", "label": "Typical safety factor target", "note": "Designs carry at least twice their expected load." }
+      ]
+    },
+    {
+      "id": "designs", "type": "feature-grid", "mode": "green", "title": "How the main designs work",
+      "summary": "Each family routes force differently.",
+      "items": [
+        { "title": "Beam", "text": "A horizontal span supported at both ends. Simple to build, but long beams sag unless they are deep or supported." },
+        { "title": "Arch", "text": "The curve turns downward load into compression that flows into the abutments at each end." },
+        { "title": "Truss", "text": "Triangles make a rigid frame. Each member is mostly in pure tension or pure compression." },
+        { "title": "Suspension", "text": "Deck loads hang from cables. The cables carry tension over towers into anchors on the shore." }
+      ]
+    },
+    {
+      "id": "gallery", "type": "gallery", "mode": "yellow", "title": "Structures to explore",
+      "summary": "Compare shapes and notice where the material is working hardest.",
+      "images": [
+        { "src": "assets/bridge-arch.svg", "alt": "Stone arch bridge curving over water", "caption": "Arch: compression along the curve." },
+        { "src": "assets/bridge-truss.svg", "alt": "Truss bridge made from a row of triangles", "caption": "Truss: a frame of triangles." },
+        { "src": "assets/bridge-beam.svg", "alt": "Simple beam bridge with a downward load arrow", "caption": "Beam: bending under load." },
+        { "src": "assets/bridge-hero.svg", "alt": "Suspension bridge with towers and hanging cables", "caption": "Suspension: cables in tension." }
+      ]
+    },
+    {
+      "id": "timeline", "type": "timeline", "mode": "blue", "title": "A short history of spanning gaps",
+      "items": [
+        { "label": "Prehistory", "title": "Fallen logs and stone slabs", "text": "The first beam bridges were found objects." },
+        { "label": "~200 BCE", "title": "Roman arches", "text": "Repeated semicircular arches carried roads and aqueducts across valleys." },
+        { "label": "1779", "title": "Cast-iron bridge", "text": "Iron arrived as a structural material for spans." },
+        { "label": "1930s", "title": "Long-span suspension", "text": "Steel cables made spans of more than a kilometre possible." }
+      ]
+    },
+    {
+      "id": "myths", "type": "comparison", "mode": "red", "title": "Challenge: is the arch always strongest?",
+      "summary": "Two common claims, tested against the physics.",
+      "items": [
+        { "title": "Claim: arches never fail", "points": ["Arches need solid abutments to resist sideways thrust.", "A weak foundation lets the arch spread and collapse."] },
+        { "title": "Claim: thicker is always safer", "points": ["Extra material adds dead load.", "A heavier bridge may need bigger foundations."] }
+      ]
+    },
+    {
+      "id": "faq", "type": "faq", "mode": "red", "title": "Questions to argue about",
+      "items": [
+        { "q": "Why do suspension bridges sway?", "a": "Their light, flexible decks respond to wind. Designers add stiffening trusses and aerodynamic shapes to control movement." },
+        { "q": "Can a bridge be too strong?", "a": "Over-building costs money and materials, and stiff structures can crack where flexible ones would absorb movement." }
+      ]
+    },
+    {
+      "id": "build-a-truss", "type": "project", "mode": "orange", "title": "Build a craft-stick truss bridge",
+      "summary": "Test the triangle for yourself.",
+      "paragraphs": ["Build a small truss and test how much weight it carries before it bends. Record your results and try a second design."],
+      "materials": ["30 craft sticks", "White glue", "Two stacks of books as supports", "A small bucket and coins as load"],
+      "steps": ["Glue two sticks into a long beam and let them dry.", "Add diagonal sticks to form triangles along both sides.", "Rest the span across the books with 20 cm between supports.", "Hang the bucket in the middle and add coins one at a time.", "Record the load at which the bridge bends."],
+      "image": { "src": "assets/bridge-model.svg", "alt": "A model truss bridge built from craft sticks resting on two supports", "caption": "A finished craft-stick truss.", "width": 640, "height": 360 }
+    },
+    {
+      "id": "quote", "type": "quote", "mode": "yellow", "title": "A thought to carry",
+      "text": "Anyone can build a bridge that stands. An engineer builds one that stands just enough.",
+      "cite": "Engineering proverb"
+    },
+    {
+      "id": "related", "type": "related", "mode": "yellow", "title": "Keep exploring",
+      "items": [
+        { "title": "How skyscrapers resist wind", "text": "Tall structures face the same forces sideways.", "href": "#" },
+        { "title": "Why domes stand", "text": "Compression-only shells in architecture.", "href": "#" },
+        { "title": "Materials science for makers", "text": "Why steel, wood and concrete behave so differently.", "href": "#" }
+      ]
+    }
+  ]
+}

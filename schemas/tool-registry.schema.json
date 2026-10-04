@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "layaphi/tool-registry.schema.json",
+  "title": "LayaPhi Tool Registry",
+  "type": "object",
+  "required": ["version", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "category", "status", "description", "source", "license", "bytes", "runtimeJs"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string" },
+          "category": { "type": "string", "enum": ["layout", "typography", "accessibility", "responsive design", "diagrams", "galleries", "animation", "data visualization", "educational components", "navigation", "media", "forms", "code display"] },
+          "status": { "type": "string", "enum": ["approved", "planned", "deprecated"] },
+          "description": { "type": "string" },
+          "source": { "type": "string", "enum": ["builtin", "adapter"] },
+          "license": { "type": "string" },
+          "adapter": { "type": "string", "description": "Path of the controlled LayaPhi adapter; the only code that may touch the tool" },
+          "provides": { "type": "array", "items": { "type": "string" }, "description": "Capability tags used for duplicate detection" },
+          "bytes": { "type": "integer", "minimum": 0, "description": "Approximate runtime payload added to generated pages" },
+          "runtimeJs": { "type": "boolean" },
+          "upstream": { "type": "string", "description": "Upstream project (adapters only)" },
+          "validatedAt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

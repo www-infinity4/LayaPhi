@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "layaphi/design-manifest.schema.json",
+  "title": "LayaPhi Design Manifest",
+  "type": "object",
+  "required": [
+    "generator",
+    "seed",
+    "archetype",
+    "signature",
+    "components",
+    "mutations",
+    "userPresentation",
+    "accessibility",
+    "tools",
+    "decisions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "generator": {
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "seed": {
+      "type": "string"
+    },
+    "inputHash": {
+      "type": "string"
+    },
+    "archetype": {
+      "type": "string"
+    },
+    "signature": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rejected": {
+          "type": "array"
+        }
+      }
+    },
+    "navigation": {
+      "type": "string"
+    },
+    "sourcePresentation": {
+      "type": "string"
+    },
+    "tokenOverrides": {
+      "type": "object"
+    },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "component",
+          "props"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "component": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "mode": {
+            "type": "string"
+          },
+          "props": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "mutations": {
+      "type": "object",
+      "required": [
+        "applied",
+        "rejected"
+      ],
+      "properties": {
+        "applied": {
+          "type": "array"
+        },
+        "rejected": {
+          "type": "array"
+        }
+      }
+    },
+    "userPresentation": {
+      "type": "object",
+      "required": [
+        "profile",
+        "signalsUsed",
+        "ignoredSignals",
+        "overrides"
+      ],
+      "properties": {
+        "profile": {
+          "type": "string"
+        },
+        "signalsUsed": {
+          "type": "array"
+        },
+        "ignoredSignals": {
+          "type": "array"
+        },
+        "overrides": {
+          "type": "array"
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "required": [
+        "passed",
+        "checks"
+      ],
+      "properties": {
+        "passed": {
+          "type": "boolean"
+        },
+        "checks": {
+          "type": "array"
+        },
+        "repairs": {
+          "type": "array"
+        }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "category"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "decision",
+          "reason"
+        ],
+        "properties": {
+          "decision": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "leadOrientation": {
+      "type": "string"
+    },
+    "rejectedCombinations": {
+      "type": "array"
+    }
+  }
+}

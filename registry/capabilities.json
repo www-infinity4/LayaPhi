@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "semantic-html",
+      "name": "Semantic HTML primitives",
+      "category": "layout",
+      "status": "approved",
+      "description": "Landmarks, sectioning elements and heading hierarchy emitted by every component.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/html.js"
+    },
+    {
+      "id": "css-grid-layout",
+      "name": "CSS grid/flex layout",
+      "category": "layout",
+      "status": "approved",
+      "description": "Mobile-first grid layouts driven by data-attributes and custom properties.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/html.js",
+      "provides": [
+        "grid-layout"
+      ]
+    },
+    {
+      "id": "css-custom-properties-compiler",
+      "name": "Signature \u2192 CSS variables compiler",
+      "category": "layout",
+      "status": "approved",
+      "description": "Compiles design signatures into :root custom properties.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/tokens.js"
+    },
+    {
+      "id": "fluid-typography",
+      "name": "Fluid modular type scale",
+      "category": "typography",
+      "status": "approved",
+      "description": "clamp()-based modular scale generated from signature typography.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/tokens.js",
+      "provides": [
+        "fluid-type",
+        "modular-scale"
+      ]
+    },
+    {
+      "id": "contrast-validator",
+      "name": "WCAG contrast checker/repairer",
+      "category": "accessibility",
+      "status": "approved",
+      "description": "WCAG AA contrast measurement and colour repair.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/accessibility/contrast.js",
+      "provides": [
+        "contrast-check"
+      ]
+    },
+    {
+      "id": "a11y-static-validator",
+      "name": "Static accessibility validator",
+      "category": "accessibility",
+      "status": "approved",
+      "description": "Landmarks, headings, alt text, focus, tap targets, line length, overflow and reduced motion checks.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/accessibility/validator.js"
+    },
+    {
+      "id": "responsive-breakpoints",
+      "name": "Signature breakpoints",
+      "category": "responsive design",
+      "status": "approved",
+      "description": "Mobile-first media queries compiled from signature breakpoints.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/css.js"
+    },
+    {
+      "id": "scroll-snap-rail",
+      "name": "Scroll-snap media rail",
+      "category": "galleries",
+      "status": "approved",
+      "description": "Keyboard-focusable horizontally scrolling rail using CSS scroll-snap; no JavaScript.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/css.js",
+      "provides": [
+        "image-carousel",
+        "horizontal-rail"
+      ]
+    },
+    {
+      "id": "details-disclosure",
+      "name": "Native disclosure widgets",
+      "category": "educational components",
+      "status": "approved",
+      "description": "details/summary for read-more, FAQ and collapsible navigation; works without JavaScript.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/components/library.js",
+      "provides": [
+        "accordion",
+        "disclosure"
+      ]
+    },
+    {
+      "id": "toc-navigation",
+      "name": "Table of contents / section navigation",
+      "category": "navigation",
+      "status": "approved",
+      "description": "Anchor navigation with optional active-section enhancement.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 350,
+      "runtimeJs": true,
+      "adapter": "src/components/library.js",
+      "provides": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "video-chapters",
+      "name": "Video chapter controls",
+      "category": "media",
+      "status": "approved",
+      "description": "Native video with chapter links; JS enhancement seeks the player.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 400,
+      "runtimeJs": true,
+      "adapter": "src/compiler/script.js",
+      "provides": [
+        "video-chapters"
+      ]
+    },
+    {
+      "id": "phi-educational-modes",
+      "name": "Phi five-mode system",
+      "category": "educational components",
+      "status": "approved",
+      "description": "Yellow/Green/Blue/Red/Orange semantic modes rendered per design signature.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/components/modes.js"
+    },
+    {
+      "id": "reduced-motion-guard",
+      "name": "Reduced-motion guard",
+      "category": "animation",
+      "status": "approved",
+      "description": "prefers-reduced-motion override plus signature animation duration cap.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false,
+      "adapter": "src/compiler/css.js",
+      "provides": [
+        "reduced-motion"
+      ]
+    },
+    {
+      "id": "inline-svg-diagrams",
+      "name": "Inline SVG diagram renderer",
+      "category": "diagrams",
+      "status": "planned",
+      "description": "Render declarative diagram specs to accessible inline SVG.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "css-bar-charts",
+      "name": "CSS/SVG data visualisation",
+      "category": "data visualization",
+      "status": "planned",
+      "description": "Accessible bar/line charts from tabular data with text alternatives.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "accessible-forms",
+      "name": "Accessible form kit",
+      "category": "forms",
+      "status": "planned",
+      "description": "Labelled inputs, validation messaging and error summaries.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "code-blocks",
+      "name": "Static syntax-highlighted code blocks",
+      "category": "code display",
+      "status": "planned",
+      "description": "Build-time highlighting with copy button enhancement.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "scroll-reveal",
+      "name": "Scroll reveal (motion-safe)",
+      "category": "animation",
+      "status": "planned",
+      "description": "Opt-in, reduced-motion-safe reveal transitions.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false
+    },
+    {
+      "id": "lightbox",
+      "name": "Image lightbox",
+      "category": "galleries",
+      "status": "planned",
+      "description": "Dialog-based enlargement for gallery images.",
+      "source": "builtin",
+      "license": "MIT",
+      "bytes": 0,
+      "runtimeJs": false
+    }
+  ]
+}

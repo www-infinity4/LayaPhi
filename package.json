@@ -1,0 +1,13 @@
+{
+  "name": "layaphi",
+  "version": "0.1.0",
+  "description": "LayaPhi — adaptive website layout & design engine for the Phi system",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test",
+    "build:examples": "node examples/build.js"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "layaphi/site-content.schema.json",
+  "title": "LayaPhi structured site content (engine input)",
+  "type": "object",
+  "required": ["purpose", "title", "sections"],
+  "properties": {
+    "purpose": { "type": "string", "description": "e.g. educational, reference, gallery, video-course, project-guide, landing" },
+    "title": { "type": "string" },
+    "topic": { "type": "string" },
+    "summary": { "type": "string" },
+    "lang": { "type": "string" },
+    "heroImage": { "type": "object", "required": ["src"] },
+    "video": { "type": "object", "required": ["src"] },
+    "navigation": { "type": "array", "items": { "type": "object", "required": ["label", "target"] } },
+    "cta": { "type": "object", "required": ["label", "href"], "properties": { "label": { "type": "string" }, "href": { "type": "string" }, "text": { "type": "string" } } },
+    "sources": { "type": "array", "items": { "type": "object", "required": ["title"] } },
+    "availableComponents": { "type": "array", "items": { "type": "string" } },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "title"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string", "enum": ["lesson", "research", "experiment", "project", "feature-grid", "comparison", "timeline", "statistics", "gallery", "media-rail", "callout", "quote", "faq", "related"] },
+          "mode": { "type": "string", "enum": ["yellow", "green", "blue", "red", "orange"] },
+          "title": { "type": "string" }
+        }
+      }
+    }
+  }
+}
