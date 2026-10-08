@@ -30,7 +30,7 @@
     },
     {
       "id": "css-custom-properties-compiler",
-      "name": "Signature \u2192 CSS variables compiler",
+      "name": "Signature → CSS variables compiler",
       "category": "layout",
       "status": "approved",
       "description": "Compiles design signatures into :root custom properties.",
@@ -249,6 +249,24 @@
       "license": "MIT",
       "bytes": 0,
       "runtimeJs": false
+    },
+    {
+      "id": "podcast-yellow-card",
+      "name": "WidgetPhi Podcast / X Spaces Yellow Card",
+      "category": "media",
+      "status": "planned",
+      "description": "One free episode, linked official source or authorized audio, optional RSS metadata, Read More, source citations, creator-selected 0–100 whole StarCoin unlock price. Approval requires verified Unified Wallet atomic creator settlement, signed Infinity reward issuance and embed-right checks.",
+      "source": "www-infinity4/WidgetPhi",
+      "license": "Project",
+      "bytes": 0,
+      "runtimeJs": true,
+      "adapter": "www-infinity4/Omni-Phi/code/podcast-widget.js",
+      "provides": [
+        "podcast-card",
+        "episode-rotation",
+        "media-lifecycle",
+        "unified-wallet-creator-settlement"
+      ]
     }
   ]
 }
