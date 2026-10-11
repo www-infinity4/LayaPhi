@@ -1,0 +1,159 @@
+{
+  "id": "oracle-octaves",
+  "name": "Oracle Octaves",
+  "description": "Infinity Phi Oracle Octaves layout: parchment canvas, white layered cards, red primary controls, 44px touch targets, mobile-first research and creation.",
+  "typography": {
+    "baseSize": 1.0625,
+    "scaleRatio": 1.24,
+    "lineHeight": 1.6,
+    "fontRoles": {
+      "heading": "'Segoe UI', system-ui, sans-serif",
+      "body": "'Segoe UI', system-ui, sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    },
+    "weights": {
+      "body": 400,
+      "heading": 700,
+      "strong": 700
+    }
+  },
+  "spacing": {
+    "unit": 0.5,
+    "scale": [
+      0.25,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4.5,
+      6
+    ]
+  },
+  "contentWidth": {
+    "text": 68,
+    "page": 1120
+  },
+  "colors": {
+    "scheme": "light",
+    "bg": "#fbf8f1",
+    "surface": "#ffffff",
+    "text": "#281f24",
+    "muted": "#5a5247",
+    "link": "#8f202d",
+    "accent": "#8f202d",
+    "focus": "#8f202d",
+    "border": "#d9cbb9",
+    "modes": {
+      "yellow": {
+        "bg": "#fff6cc",
+        "fg": "#4a3b00",
+        "accent": "#8a6a00"
+      },
+      "green": {
+        "bg": "#e3f5e8",
+        "fg": "#0b3d1c",
+        "accent": "#1b7f3b"
+      },
+      "blue": {
+        "bg": "#e1edfb",
+        "fg": "#0d2c54",
+        "accent": "#1f5fbf"
+      },
+      "red": {
+        "bg": "#fde4e1",
+        "fg": "#5a0f0a",
+        "accent": "#c0392b"
+      },
+      "orange": {
+        "bg": "#ffe9d6",
+        "fg": "#5a2a00",
+        "accent": "#b45309"
+      }
+    }
+  },
+  "contrast": {
+    "text": 4.5,
+    "nonText": 3
+  },
+  "borders": {
+    "width": 1,
+    "style": "solid"
+  },
+  "corners": {
+    "radius": 18,
+    "geometry": "round"
+  },
+  "shadows": {
+    "card": "0 6px 22px rgba(47, 26, 22, 0.10)"
+  },
+  "rhythm": {
+    "section": 5,
+    "pattern": "uniform"
+  },
+  "hero": {
+    "behavior": "stacked",
+    "minHeight": 0
+  },
+  "imageTreatment": {
+    "aspect": "16 / 9",
+    "fit": "cover",
+    "frame": "none"
+  },
+  "videoTreatment": {
+    "aspect": "16 / 9",
+    "frame": "none",
+    "chapterStyle": "list"
+  },
+  "navigation": {
+    "default": "top-bar",
+    "allowed": [
+      "top-bar",
+      "bottom-bar",
+      "sticky-toc"
+    ],
+    "stickyHeader": true
+  },
+  "cards": {
+    "style": "raised",
+    "padding": 1.25
+  },
+  "modeTreatment": "stripe",
+  "animation": {
+    "maxDurationMs": 180,
+    "transitions": true
+  },
+  "breakpoints": {
+    "md": 640,
+    "lg": 1024
+  },
+  "suits": {
+    "profiles": [
+      "reader",
+      "visual",
+      "mixed"
+    ],
+    "archetypes": [
+      "explainer",
+      "research",
+      "project-guide",
+      "course",
+      "visual-story"
+    ]
+  },
+  "mutation": {
+    "allowed": [
+      "hero.orientation",
+      "section.order",
+      "column.ratio",
+      "media.placement",
+      "density",
+      "navigation.style",
+      "section.rhythm",
+      "type.scale",
+      "card.geometry",
+      "whitespace",
+      "source.presentation"
+    ]
+  }
+}
