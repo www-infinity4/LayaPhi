@@ -256,7 +256,7 @@
       "category": "media",
       "status": "planned",
       "description": "One free episode, linked official source or authorized audio, optional RSS metadata, Read More, source citations, creator-selected 0–100 whole StarCoin unlock price. Approval requires verified Unified Wallet atomic creator settlement, signed Infinity reward issuance and embed-right checks.",
-      "source": "www-infinity4/WidgetPhi",
+      "source": "adapter",
       "license": "Project",
       "bytes": 0,
       "runtimeJs": true,

@@ -80,7 +80,9 @@ export class IterationEngine {
       return [s];
     }
     const rng = createRng(seed, 'signature');
-    return this.signatures
+    // New Oracle Octaves work explicitly selects its signature; keep existing seeded
+    // site designs byte-identical until their owners choose a redesign.
+    return this.signatures.filter(s => s.id !== 'oracle-octaves')
       .map((s) => {
         let score = 0;
         if (s.suits.profiles.includes(profile.kind)) score += 3;
